@@ -1,0 +1,41 @@
+.backdrop {
+  position: fixed;
+  background-color: rgba(32, 22, 22, 0.4);
+  inset: 0;
+  z-index: 20;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1.5rem;
+  position: relative;
+}
+
+.header_logo {
+  margin-right: 1rem;
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+.bar_container {
+  cursor: pointer;
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: 48rem) {
+  .bar_container,
+  .backdrop {
+    display: none;
+  }
+}
+
+.open {
+  display: block;
+}

@@ -1,0 +1,12 @@
+.section__main {
+  background: var(--Purple-950)
+    url(../../../../public/images/bg-boost-mobile.svg) center/ cover no-repeat;
+
+  div {
+    padding-block: 3rem;
+  }
+
+  h2 {
+    color: white;
+  }
+}

@@ -1,0 +1,74 @@
+.lists__container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 5rem;
+}
+
+.shortenedList {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-radius: 0.3rem;
+  /* max-width: 100%; */
+}
+
+.enterdLink {
+  color: var(--Gray-950);
+  padding-inline: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* min-width: 0; */
+}
+
+hr {
+  border-color: var(--Gray-400);
+  margin: 0;
+}
+
+.shortList__copyBtn-div {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1em;
+}
+
+.shortenedLink {
+  color: var(--Blue-400);
+}
+
+.linkCopyButton {
+  background-color: var(--Blue-400);
+  color: white;
+  border-radius: 0.3rem;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 48rem) {
+  .lists__container {
+    padding-top: 4.25rem;
+  }
+
+  .shortenedList {
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding-inline: 1em; */
+  }
+
+  hr {
+    display: none;
+  }
+
+  .shortList__copyBtn-div {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .linkCopyButton {
+    display: initial;
+    margin: 0;
+  }
+}

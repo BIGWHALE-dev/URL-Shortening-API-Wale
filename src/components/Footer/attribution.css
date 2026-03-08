@@ -1,0 +1,9 @@
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  color: var(--Blue-400);
+
+  a {
+    color: white;
+  }
+}

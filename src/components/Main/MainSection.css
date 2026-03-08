@@ -1,0 +1,24 @@
+.main-section {
+  background-color: #f4f4f4;
+  width: 100%;
+  font-size: 16px;
+}
+
+.section-intro__container {
+  padding-block: 3.5rem 0;
+}
+
+.main-section_container {
+  position: relative;
+}
+
+.subtitle {
+  max-width: 500px;
+  margin: auto;
+}
+
+@media (min-width: 48rem) {
+  .main-section {
+    font-size: 14px;
+  }
+}
