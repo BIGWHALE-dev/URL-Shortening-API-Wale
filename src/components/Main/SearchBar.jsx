@@ -3,7 +3,6 @@ import "./SearchBar.css";
 
 function SearchBar(prop) {
   const [inputLink, setInputLink] = useState("");
-  // const [isShortened, setShortURL] = useState(false);
   const [errMessage, setErrMessage] = useState("");
 
   async function requestHandler(e) {
@@ -23,16 +22,12 @@ function SearchBar(prop) {
       if (!res.ok)
         throw new Error(`Unable to shorten link, try again (${res.status})`);
       const data = await res.json();
-      console.log(res);
-      console.log(data);
 
-      // setShortURL(true);
       const shortenedResult = data.result_url;
       prop.onReceiveShortLink({ inputLink, shortenedResult });
       setInputLink("");
-      // return data.result_url;
     } catch (err) {
-      console.error(err.message + ",", "check your internet connection");
+      console.error(err.message);
     }
   }
 
@@ -61,4 +56,3 @@ function SearchBar(prop) {
 }
 
 export default SearchBar;
-// "https://corsproxy.io/?"

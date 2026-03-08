@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./shortenedList.css";
+import "./ShortenedList.css";
 
 function ShortenList(prop) {
   const [btnIndex, setIndex] = useState(null);
