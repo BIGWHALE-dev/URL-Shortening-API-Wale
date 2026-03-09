@@ -12,7 +12,6 @@ function MainSection() {
 
   function linksData(data) {
     const link = { ...data, id: crypto.randomUUID() };
-    console.log(link);
     setStoredLinks((prevs) => [link, ...prevs]);
   }
 
