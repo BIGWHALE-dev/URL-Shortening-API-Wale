@@ -32,7 +32,7 @@ function ShortenList(prop) {
               <button
                 className="linkCopyButton"
                 type="button"
-                onClick={() => copyBtnHandler(i, data.shortURL)}
+                onClick={() => copyBtnHandler(i, data.shortenedResult)}
                 style={{
                   backgroundColor: btnIndex === i ? "hsl(257, 27%, 26%)" : "",
                 }}
