@@ -11,7 +11,7 @@ function SearchBar(prop) {
 
       if (!inputLink) return setErrMessage("Please add a link");
       const res = await fetch(
-        "https://cors-anywhere.herokuapp.com/" +
+        "https://api.allorigins.win/raw?url=" +
           "https://cleanuri.com/api/v1/shorten",
         {
           method: "POST",
