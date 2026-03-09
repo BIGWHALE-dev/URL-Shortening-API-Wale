@@ -11,11 +11,14 @@ function SearchBar(prop) {
 
       if (!inputLink) return setErrMessage("Please add a link");
 
-      const res = await fetch("https://cleanuri.com/api/v1/shorten", {
-        method: "POST",
-        headers: { "content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({ url: inputLink }),
-      });
+      const res = await fetch(
+        "https://corsproxy.io/?https://cleanuri.com/api/v1/shorten",
+        {
+          method: "POST",
+          headers: { "content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams({ url: inputLink }),
+        },
+      );
 
       if (!res.ok)
         throw new Error(`Unable to shorten link, try again (${res.status})`);
