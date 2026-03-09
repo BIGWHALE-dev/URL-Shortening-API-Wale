@@ -11,7 +11,8 @@ function SearchBar(prop) {
 
       if (!inputLink) return setErrMessage("Please add a link");
       const res = await fetch(
-        "https://corsproxy.io/?" + "https://cleanuri.com/api/v1/shorten",
+        "https://cors-anywhere.herokuapp.com/" +
+          "https://cleanuri.com/api/v1/shorten",
         {
           method: "POST",
           headers: { "content-Type": "application/x-www-form-urlencoded" },
