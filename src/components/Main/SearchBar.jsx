@@ -8,8 +8,25 @@ function SearchBar(prop) {
   async function requestHandler(e) {
     try {
       e.preventDefault();
+      const urlPattern = new RegExp(
+        "^(https?:\\/\\/)?" + // protocol
+          "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // domain name
+          "((\\d{1,3}\\.){3}\\d{1,3}))" + // OR ip (v4) address
+          "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" + // port and path
+          "(\\?[;&a-z\\d%_.~+=-]*)?" + // query string
+          "(\\#[-a-z\\d_]*)?$",
+        "i", // fragment locator
+      );
 
-      if (!inputLink) return setErrMessage("Please add a link");
+      if (!urlPattern.test(inputLink)) {
+        setErrMessage("Enter a valid link");
+        return;
+      }
+      if (!inputLink) {
+        setErrMessage("Please add a link");
+        return;
+      }
+
       const res = await fetch(
         "https://cors-anywhere.com/" + "https://cleanuri.com/api/v1/shorten",
         {

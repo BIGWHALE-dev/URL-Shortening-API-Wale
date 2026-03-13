@@ -46,6 +46,7 @@ input:placeholder-shown {
   margin: 0;
   text-align: left;
   color: var(--Red-400);
+  font-size: 0.85rem;
 }
 
 .search-btn {
