@@ -21,6 +21,7 @@ function SearchBar(prop) {
 
       if (!res.ok)
         throw new Error(`Unable to shorten link, try again (${res.status})`);
+
       const data = await res.json();
       const shortenedResult = data.result_url;
       prop.onReceiveShortLink({ inputLink, shortenedResult });

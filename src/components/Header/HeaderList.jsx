@@ -9,11 +9,11 @@ function HeaderLists(prop) {
         <li>Resources</li>
       </ul>
 
-      <hr />
+      <hr className="mobile-nav_hr" />
 
       <div className="button_container">
         <button className="transparent_btn">Login</button>
-        <button className="button">Sign Up</button>
+        <button className="button signup_btn">Sign Up</button>
       </div>
     </div>
   );

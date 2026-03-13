@@ -40,7 +40,6 @@
 
 body {
   margin: 0;
-  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
@@ -55,7 +54,7 @@ p {
 
 button,
 input[type="submit"] {
-  padding: 0.5em 1.5em;
+  padding: 0.7em 1.5em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -67,6 +66,13 @@ input[type="submit"] {
 button:not(.transparent_btn):active,
 input[type="submit"]:active {
   background-color: hsl(180, 66%, 75%);
+}
+
+.button {
+  border: 1px solid transparent;
+  color: white;
+  background-color: var(--Blue-400);
+  border-radius: 50px;
 }
 
 /* @media (prefers-color-scheme: light) {

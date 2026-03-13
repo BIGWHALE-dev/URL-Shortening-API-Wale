@@ -25,7 +25,7 @@ function ShortenList(prop) {
           <li className="shortenedList" key={data.id}>
             <p className="enterdLink">{data.inputLink}</p>
 
-            <hr />
+            <hr className="list-hr" />
 
             <div className="shortList__copyBtn-div">
               <p className="shortenedLink">{data.shortenedResult}</p>
