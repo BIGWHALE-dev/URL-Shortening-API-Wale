@@ -10,19 +10,19 @@ function Footer() {
           <img src="/images/logo-light.svg" alt="logo" />
         </div>
         <div className="pages_link">
-          <h3>Features</h3>
+          <h4>Features</h4>
           <p>Link Shortening</p>
           <p>Branded Links</p>
           <p>Analytics</p>
         </div>
         <div className="pages_link">
-          <h3>Resources</h3>
+          <h4>Resources</h4>
           <p>Blog</p>
           <p>Developers</p>
           <p>Support</p>
         </div>
         <div className="pages_link">
-          <h3>Company</h3>
+          <h4>Company</h4>
           <p>About</p>
           <p>Our Team</p>
           <p>Careers</p>
