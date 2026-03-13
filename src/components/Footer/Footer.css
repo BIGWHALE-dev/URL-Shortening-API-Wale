@@ -10,8 +10,9 @@ footer {
 }
 
 .pages_link {
-  h4 {
+  h3 {
     color: white;
+    font-size: 1em;
   }
 
   p:active {
@@ -54,7 +55,7 @@ footer {
     }
   }
 
-  h4 {
+  h3 {
     margin-top: 0;
     line-height: 1.1;
   }
