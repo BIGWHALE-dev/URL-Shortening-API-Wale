@@ -39,6 +39,7 @@
 }
 
 .linkCopyButton {
+  padding: 0.4em 1.5em;
   background-color: var(--Blue-400);
   color: white;
   border-radius: 0.3rem;
