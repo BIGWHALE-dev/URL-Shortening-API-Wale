@@ -59,7 +59,6 @@ input[type="submit"] {
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
-  transition: border-color 0.25s filter 0.5 ease;
   border: none;
 }
 
