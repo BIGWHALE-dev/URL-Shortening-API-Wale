@@ -4,7 +4,6 @@
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
   font-weight: 500;
-  font-size: 1.125rem;
 
   /* color-scheme: light dark; */
   /* color: var(--Gray-900); */
@@ -42,6 +41,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  font-size: 1.125em;
 }
 
 h1 {
@@ -88,8 +88,8 @@ input[type="submit"]:active {
 } */
 
 @media (min-width: 48rem) {
-  :root {
-    font-size: 1rem;
+  body {
+    font-size: 1em;
   }
 
   button:not(.transparent_btn):hover,

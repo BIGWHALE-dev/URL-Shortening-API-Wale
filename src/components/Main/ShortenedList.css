@@ -49,13 +49,12 @@
 
 @media (min-width: 48rem) {
   .lists__container {
-    padding-top: 4.25rem;
+    padding-top: 4.5rem;
   }
 
   .shortenedList {
     flex-direction: row;
     justify-content: space-between;
-    /* padding-inline: 1em; */
   }
 
   hr {
